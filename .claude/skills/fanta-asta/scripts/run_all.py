@@ -1,8 +1,9 @@
 """Esegue l'intera pipeline: statistiche (2 stagioni), titolari, rigoristi, indisponibili, anagrafica, Excel.
 
-Uso: python run_all.py [--no-anagrafica] [--fresh]
+Uso: python run_all.py [--no-anagrafica] [--fresh] [--soprannomi]
   --fresh          ignora la cache HTML (ri-scarica tutto)
   --no-anagrafica  salta le schede giocatore (età): utile per un giro veloce
+  --soprannomi     cerca anche nome completo e soprannome (Wikipedia, ~20 min)
 """
 from __future__ import annotations
 
@@ -36,6 +37,9 @@ def main() -> None:
     run("fetch_indisponibili.py")
     if "--no-anagrafica" not in sys.argv:
         run("fetch_anagrafica.py")
+    run("fetch_titolarita.py")
+    if "--soprannomi" in sys.argv:  # lento (~20 min): Wikipedia limita le richieste
+        run("fetch_soprannomi.py")
     run("build_excel.py")
 
 

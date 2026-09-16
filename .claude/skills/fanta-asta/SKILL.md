@@ -29,6 +29,7 @@ tempi di rientro, età, gol subiti per squadra. Gli script producono `output/ast
    python run_all.py                  # completo (le età richiedono ~4 min la prima volta)
    python run_all.py --no-anagrafica  # giro veloce senza età
    python run_all.py --fresh          # ignora la cache HTML (data/cache, valida 6-12 h)
+   python run_all.py --soprannomi     # aggiunge nome completo e soprannome (Wikipedia, ~20 min)
    ```
    Su Windows lancia con `PYTHONIOENCODING=utf-8` se la console è cp1252.
 3. **Controlla l'output di build_excel.py** prima di leggere l'Excel:
@@ -47,6 +48,8 @@ tempi di rientro, età, gol subiti per squadra. Gli script producono `output/ast
    - **Attaccanti**: le punte da ≥10 gol (scorso anno o proiezione), chi ha cambiato squadra, quinta punta
    - **Centrocampisti**: obiettivi, chi fa assist, il "bomber" (segna o tira rigori), Roma/Como
    - **Difensori**: titolari con MV ≥ 6, rigoristi/piazzati in cima, difensori Como
+   - usa `da_titolare`/`pct_titolare` per distinguere il titolare fisso da chi lo è solo nelle probabili di
+     questa settimana; per la stagione scorsa il riferimento è `presenze_prev`
    - il foglio Giocatori è ordinato per ruolo e nome e ha la colonna `venduto` (spunta da menu a tendina
      durante l'asta); gli altri fogli la leggono via formula sull'id e barrano la riga. Non toccare la
      colonna `id` nascosta: è la chiave delle formule
@@ -71,6 +74,8 @@ tempi di rientro, età, gol subiti per squadra. Gli script producono `output/ast
 | Rigoristi | `fantacalcio.it/rigoristi-serie-a` | fanta.soccer non ha la pagina |
 | Indisponibili | fanta.soccer (chi) + transfermarkt (data rientro) + fantacalcio.it (nota) | fanta.soccer non riporta la durata |
 | Età | schede giocatore fanta.soccer | cache permanente in `data/anagrafica.csv` |
+| Titolarità stagione corrente | schede giocatore, sezione "Partite disputate" (`fetch_titolarita.py`) | IN=1 entrato dalla panchina; card con MV "-" e nessun evento = non ha giocato. Solo stagione corrente: le precedenti richiedono un postback |
+| Soprannomi | Wikipedia IT via API (`fetch_soprannomi.py`) | limite ~1 richiesta/1.5 s, 429 frequenti; copertura parziale; "detto X" solo tra virgolette (altrimenti cattura i nomi dei club) |
 | Marcatori | usa "Gol Segnati" fanta.soccer | `calcio.com/statistiche/.../marcatori` è protetto da verifica accesso: non scaricabile |
 
 - I nomi differiscono tra fonti: il match è per cognome normalizzato + squadra (`common.norm_name`, `norm_team`).

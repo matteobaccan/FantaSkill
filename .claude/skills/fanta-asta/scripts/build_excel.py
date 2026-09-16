@@ -44,7 +44,11 @@ def load_all(cfg: dict) -> dict[str, pd.DataFrame]:
     for k, season in (("cur", cfg["stagione_corrente"]), ("prev", cfg["stagione_precedente"])):
         path = DATA_DIR / f"classifica_{season}.csv"
         cla[k] = pd.read_csv(path) if path.exists() else pd.DataFrame(columns=["squadra_n", "pg", "gf", "gs", "gs_partita"])
-    return {"cur": cur, "prev": prev, "tit": tit, "rig": rig, "ind": ind, "ana": ana, "cla": cla}
+    tp = DATA_DIR / "titolarita.csv"
+    titolarita = pd.read_csv(tp, dtype={"id": str}) if tp.exists() else pd.DataFrame(columns=["id", "da_titolare", "subentrato", "sostituito", "pct_titolare"])
+    sp = DATA_DIR / "soprannomi.csv"
+    sopr = pd.read_csv(sp, dtype={"id": str}).fillna("") if sp.exists() else pd.DataFrame(columns=["id", "nome_completo", "soprannome"])
+    return {"cur": cur, "prev": prev, "tit": tit, "rig": rig, "ind": ind, "ana": ana, "cla": cla, "titolarita": titolarita, "sopr": sopr}
 
 
 def merge_seasons(cur: pd.DataFrame, prev: pd.DataFrame) -> pd.DataFrame:
@@ -75,7 +79,8 @@ def add_titolari(df: pd.DataFrame, tit: pd.DataFrame, giornata: int) -> pd.DataF
     df["titolare_prob"] = df["titolare_prob"].fillna(0).astype(int)
     # fallback: squadra senza probabile formazione -> titolare chi ha giocato quasi tutte le partite
     played = df.groupby("squadra_n")["presenze"].transform("max")
-    stima = (~df["squadra_n"].isin(teams_with_lineup)) & (df["presenze"] >= (played - 1).clip(lower=1))
+    base = df["da_titolare"] if "da_titolare" in df and df["da_titolare"].notna().any() else df["presenze"]
+    stima = (~df["squadra_n"].isin(teams_with_lineup)) & (base.fillna(0) >= (played - 1).clip(lower=1))
     df["titolare"] = ((df["titolare_prob"] == 1) | stima).astype(int)
     df["titolare_fonte"] = ""
     df.loc[df["titolare_prob"] == 1, "titolare_fonte"] = "probabili formazioni"
@@ -124,6 +129,27 @@ def add_classifica(df: pd.DataFrame, cla: dict) -> pd.DataFrame:
     prev = cla["prev"][["squadra_n", "gs", "pg", "gs_partita"]].rename(columns={"squadra_n": "squadra_prev_n", "gs": "gs_squadra_prev", "pg": "pg_squadra_prev", "gs_partita": "gs_partita_squadra_prev"})
     df["squadra_prev_n"] = df["squadra_prev"].fillna(df["squadra"]).map(norm_team)
     df = df.merge(prev, on="squadra_prev_n", how="left").drop(columns="squadra_prev_n")
+    return df
+
+
+def add_titolarita(df: pd.DataFrame, t: pd.DataFrame) -> pd.DataFrame:
+    """Partite da titolare nella stagione corrente (dalle schede giocatore)."""
+    cols = ["id", "da_titolare", "subentrato", "sostituito", "pct_titolare"]
+    if t.empty:
+        for c in cols[1:]:
+            df[c] = None
+        return df
+    return df.merge(t[cols].drop_duplicates("id"), on="id", how="left")
+
+
+def add_soprannomi(df: pd.DataFrame, s: pd.DataFrame) -> pd.DataFrame:
+    if s.empty:
+        df["nome_completo"] = ""
+        df["soprannome"] = ""
+        return df
+    df = df.merge(s[["id", "nome_completo", "soprannome"]].drop_duplicates("id"), on="id", how="left")
+    df["nome_completo"] = df["nome_completo"].fillna("")
+    df["soprannome"] = df["soprannome"].fillna("")
     return df
 
 
@@ -266,7 +292,7 @@ def with_separators(g: pd.DataFrame) -> pd.DataFrame:
 
 
 # ----------------------------------------------------------------------------- excel
-COLS_MAIN = ["nome", "ruolo", "squadra", "eta", "titolare", "presenze", "gol", "assist", "presenze_prev", "gol_prev", "assist_prev",
+COLS_MAIN = ["nome", "soprannome", "nome_completo", "ruolo", "squadra", "eta", "titolare", "da_titolare", "pct_titolare", "presenze", "gol", "assist", "presenze_prev", "gol_prev", "assist_prev",
              "titolare_fonte", "obiettivo", "fascia", "prezzo_indicativo", "punteggio",
              "fm", "mv", "rig_segnati", "fm_prev", "mv_prev", "rig_segnati_prev", "delta_fm", "fm_ponderata", "bonus", "squadra_prev", "cambiato_squadra", "rigorista", "piazzati",
              "indisponibile", "infortunio", "rientro_data", "giorni_stop", "stop_lungo", "rientro_nota", "gs_partita_squadra", "gs_partita_squadra_prev",
@@ -327,7 +353,7 @@ def write_sheet(writer, name: str, df: pd.DataFrame, cfg: dict, cols: list[str] 
     for i, c in enumerate(cols, start=1):
         if c in ("venduto", "id"):
             continue
-        width = 48 if c == "rientro_nota" else 22 if c in ("infortunio", "titolare_fonte", "obiettivo") else max(8, min(16, len(c) + 2))
+        width = 48 if c == "rientro_nota" else 22 if c in ("infortunio", "titolare_fonte", "obiettivo", "nome_completo") else max(8, min(16, len(c) + 2))
         ws.column_dimensions[get_column_letter(i)].width = width
     ws.freeze_panes = "E2"
     ws.auto_filter.ref = ws.dimensions
@@ -347,6 +373,9 @@ def legenda(cfg: dict, giornata: int, n_tot: int) -> pd.DataFrame:
         ("Fonte rigoristi", "fantacalcio.it/rigoristi-serie-a (rigorista = ordine nella gerarchia, 1 = primo tiratore)"),
         ("Fonte indisponibili", "fanta.soccer infortunati (chi) + transfermarkt (tipo e data rientro) + fantacalcio.it (nota testuale)"),
         ("Fonte età", "schede giocatore fanta.soccer"),
+        ("da_titolare / pct_titolare", "partite iniziate dall'inizio nella stagione corrente (schede fanta.soccer, sezione Partite disputate) e quota sulle giornate giocate; "
+                                       "per la stagione scorsa il riferimento resta presenze_prev"),
+        ("soprannome / nome_completo", "nome completo dalla scheda fanta.soccer; soprannome cercato nella voce di Wikipedia italiana (copertura parziale)"),
         ("fm_ponderata", "media pesata di fantamedia: partite stagione corrente peso 3, partite stagione scorsa peso 1"),
         ("bonus", "+0.5 titolare, +0.5 rigorista 1° (+0.2 se 2°), +0.1 calci piazzati, +0.3 C/A di squadra offensiva, "
                   "+0.3 C di Roma/Como, +0.2 età <= %d, -0.3 età >= 32, -0.2 indisponibile, -0.5 stop lungo (>30 gg o crociato), "
@@ -377,11 +406,13 @@ def main() -> None:
     d = load_all(cfg)
     giornata = int(d["cur"]["giornate_giocate"].iloc[0]) if "giornate_giocate" in d["cur"] else int(d["cur"]["presenze"].max())
     df = merge_seasons(d["cur"], d["prev"])
+    df = add_titolarita(df, d["titolarita"])
     df = add_titolari(df, d["tit"], giornata)
     df = add_rigoristi(df, d["rig"])
     df = add_indisponibili(df, d["ind"])
     df = add_classifica(df, d["cla"])
     df = add_anagrafica(df, d["ana"])
+    df = add_soprannomi(df, d["sopr"])
     df = add_obiettivi(df, cfg)
     df = add_score(df, cfg)
     df = add_fascia_prezzo(df, cfg)
@@ -398,13 +429,13 @@ def main() -> None:
         print(f"ATTENZIONE: asta.xlsx è aperto in Excel, scrivo {out.name}. Chiudi Excel e rilancia per aggiornare asta.xlsx")
     with pd.ExcelWriter(out, engine="openpyxl") as w:
         write_sheet(w, "Giocatori", df, cfg)
-        write_sheet(w, "Portieri", sl["P"], cfg, ["nome", "squadra", "eta", "titolare", "presenze", "presenze_prev", "squadra_prev", "gs_partita_squadra_prev", "gs_squadra_prev",
+        write_sheet(w, "Portieri", sl["P"], cfg, ["nome", "soprannome", "squadra", "eta", "titolare", "da_titolare", "pct_titolare", "presenze", "presenze_prev", "squadra_prev", "gs_partita_squadra_prev", "gs_squadra_prev",
                                                    "gs_partita_squadra", "gs_squadra", "rig_parati_prev", "mv_prev", "fm_prev", "mv", "fm", "fascia", "prezzo_indicativo", "punteggio", "indisponibile", "rientro_data", "stop_lungo"])
-        write_sheet(w, "Difensori", with_separators(sl["D"]), cfg, ["nome", "squadra", "eta", "titolare", "presenze", "gol", "assist", "presenze_prev", "gol_prev", "assist_prev", "obiettivo", "rigorista", "piazzati",
+        write_sheet(w, "Difensori", with_separators(sl["D"]), cfg, ["nome", "soprannome", "squadra", "eta", "titolare", "da_titolare", "pct_titolare", "presenze", "gol", "assist", "presenze_prev", "gol_prev", "assist_prev", "obiettivo", "rigorista", "piazzati",
                                                     "mv", "mv_prev", "fm", "fm_prev", "titolare_fonte", "fascia", "prezzo_indicativo", "punteggio", "indisponibile", "rientro_data", "stop_lungo"])
-        write_sheet(w, "Centrocampisti", with_separators(sl["C"]), cfg, ["nome", "squadra", "eta", "titolare", "presenze", "gol", "assist", "presenze_prev", "gol_prev", "assist_prev", "assist_tot", "obiettivo", "bomber",
+        write_sheet(w, "Centrocampisti", with_separators(sl["C"]), cfg, ["nome", "soprannome", "squadra", "eta", "titolare", "da_titolare", "pct_titolare", "presenze", "gol", "assist", "presenze_prev", "gol_prev", "assist_prev", "assist_tot", "obiettivo", "bomber",
                                                          "rigorista", "piazzati", "fm", "fm_prev", "mv", "mv_prev", "titolare_fonte", "fascia", "prezzo_indicativo", "punteggio", "indisponibile", "rientro_data", "stop_lungo"])
-        write_sheet(w, "Attaccanti", with_separators(sl["A"]), cfg, ["nome", "squadra", "eta", "titolare", "presenze", "gol", "assist", "presenze_prev", "gol_prev", "assist_prev", "gol_proiettati", "obiettivo", "squadra_prev",
+        write_sheet(w, "Attaccanti", with_separators(sl["A"]), cfg, ["nome", "soprannome", "squadra", "eta", "titolare", "da_titolare", "pct_titolare", "presenze", "gol", "assist", "presenze_prev", "gol_prev", "assist_prev", "gol_proiettati", "obiettivo", "squadra_prev",
                                                      "cambiato_squadra", "rigorista", "fm", "fm_prev", "fascia", "prezzo_indicativo", "punteggio", "indisponibile", "rientro_data", "stop_lungo"])
         write_sheet(w, "Obiettivi", df[df["obiettivo"] != ""], cfg)
         ind_cols = ["squadra", "nome", "ruolo", "tipo", "infortunio", "rientro_data", "rientro_nota", "fonti"]
