@@ -3,7 +3,7 @@
 Uso: python run_all.py [--no-anagrafica] [--fresh] [--soprannomi]
   --fresh          ignora la cache HTML (ri-scarica tutto)
   --no-anagrafica  salta le schede giocatore (età): utile per un giro veloce
-  --soprannomi     cerca anche nome completo e soprannome (Wikipedia, ~20 min)
+  --soprannomi     cerca anche nome completo e soprannome (Wikipedia, ~10 min, riprende se interrotto)
 """
 from __future__ import annotations
 
@@ -38,7 +38,7 @@ def main() -> None:
     if "--no-anagrafica" not in sys.argv:
         run("fetch_anagrafica.py")
     run("fetch_titolarita.py")
-    if "--soprannomi" in sys.argv:  # lento (~20 min): Wikipedia limita le richieste
+    if "--soprannomi" in sys.argv:  # lento (~10 min): una richiesta al secondo verso Wikipedia
         run("fetch_soprannomi.py")
     run("build_excel.py")
 

@@ -35,7 +35,7 @@ Oppure a mano, dalla cartella `.claude/skills/fanta-asta/scripts`:
 python run_all.py                  # tutto (le età richiedono ~4 minuti la prima volta)
 python run_all.py --no-anagrafica  # giro veloce senza età
 python run_all.py --fresh          # ignora la cache HTML (valida 6-12 ore)
-python run_all.py --soprannomi     # aggiunge nome completo e soprannome (Wikipedia, ~20 minuti)
+python run_all.py --soprannomi     # aggiunge nome completo e soprannome (Wikipedia, ~10 minuti)
 ```
 
 Su Windows con console cp1252 anteporre `PYTHONIOENCODING=utf-8`.

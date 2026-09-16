@@ -29,7 +29,7 @@ tempi di rientro, età, gol subiti per squadra. Gli script producono `output/ast
    python run_all.py                  # completo (le età richiedono ~4 min la prima volta)
    python run_all.py --no-anagrafica  # giro veloce senza età
    python run_all.py --fresh          # ignora la cache HTML (data/cache, valida 6-12 h)
-   python run_all.py --soprannomi     # aggiunge nome completo e soprannome (Wikipedia, ~20 min)
+   python run_all.py --soprannomi     # aggiunge nome completo e soprannome (Wikipedia, ~10 min, riprende se interrotto)
    ```
    Su Windows lancia con `PYTHONIOENCODING=utf-8` se la console è cp1252.
 3. **Controlla l'output di build_excel.py** prima di leggere l'Excel:
@@ -75,7 +75,7 @@ tempi di rientro, età, gol subiti per squadra. Gli script producono `output/ast
 | Indisponibili | fanta.soccer (chi) + transfermarkt (data rientro) + fantacalcio.it (nota) | fanta.soccer non riporta la durata |
 | Età | schede giocatore fanta.soccer | cache permanente in `data/anagrafica.csv` |
 | Titolarità stagione corrente | schede giocatore, sezione "Partite disputate" (`fetch_titolarita.py`) | IN=1 entrato dalla panchina; card con MV "-" e nessun evento = non ha giocato. Solo stagione corrente: le precedenti richiedono un postback |
-| Soprannomi | Wikipedia IT via API (`fetch_soprannomi.py`) | limite ~1 richiesta/1.5 s, 429 frequenti; copertura parziale; "detto X" solo tra virgolette (altrimenti cattura i nomi dei club) |
+| Soprannomi | pagine `it.wikipedia.org/wiki/<Nome_Cognome>` (`fetch_soprannomi.py`) | l'API `api.php` risponde 429 dopo poche richieste: usarla solo come fallback; testo in cache in `data/cache/wiki_*.txt`; copertura parziale; "detto X" solo tra virgolette (altrimenti cattura i nomi dei club) |
 | Marcatori | usa "Gol Segnati" fanta.soccer | `calcio.com/statistiche/.../marcatori` è protetto da verifica accesso: non scaricabile |
 
 - I nomi differiscono tra fonti: il match è per cognome normalizzato + squadra (`common.norm_name`, `norm_team`).
