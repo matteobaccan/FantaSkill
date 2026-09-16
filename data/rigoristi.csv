@@ -1,0 +1,121 @@
+squadra,tipo,ordine,nome,chiave
+Atalanta,rigori,1,Scamacca,scamacca
+Atalanta,rigori,2,Krstovic,krstovic
+Atalanta,rigori,3,Samardzic,samardzic
+Atalanta,piazzati,1,De Ketelaere,deketelaere
+Atalanta,piazzati,2,Samardzic,samardzic
+Atalanta,piazzati,3,Gaetano,gaetano
+Bologna,rigori,1,Orsolini,orsolini
+Bologna,rigori,2,Bernardeschi,bernardeschi
+Bologna,rigori,3,Dovbyk,dovbyk
+Bologna,piazzati,1,Orsolini,orsolini
+Bologna,piazzati,2,Bernardeschi,bernardeschi
+Bologna,piazzati,3,Miranda J.,miranda
+Cagliari,rigori,1,Nzola,nzola
+Cagliari,rigori,2,Kevin Carlos,kevincarlos
+Cagliari,rigori,3,Mina,mina
+Cagliari,piazzati,1,Fazzini,fazzini
+Cagliari,piazzati,2,Maldini,maldini
+Cagliari,piazzati,3,Romano,romano
+Como,rigori,1,Da Cunha,dacunha
+Como,rigori,2,Kean,kean
+Como,rigori,3,Douvikas,douvikas
+Como,piazzati,1,Paz N.,paz
+Como,piazzati,2,Baturina,baturina
+Como,piazzati,3,Milla,milla
+Fiorentina,rigori,1,Beto,beto
+Fiorentina,rigori,2,Pellegrino M.,pellegrino
+Fiorentina,rigori,3,Goncalves P.,goncalves
+Fiorentina,piazzati,1,Mastantuono,mastantuono
+Fiorentina,piazzati,2,Atta,atta
+Fiorentina,piazzati,3,Goncalves P.,goncalves
+Frosinone,rigori,1,Calò,calo
+Frosinone,rigori,2,Schmid,schmid
+Frosinone,rigori,3,Bobcek,bobcek
+Frosinone,piazzati,1,Calò,calo
+Frosinone,piazzati,2,Schmid,schmid
+Frosinone,piazzati,3,Ghedjemis,ghedjemis
+Genoa,rigori,1,Colombo,colombo
+Genoa,rigori,2,Ostigard,ostigard
+Genoa,rigori,3,Vitinha O.,vitinha
+Genoa,piazzati,1,Baldanzi,baldanzi
+Genoa,piazzati,2,Vitinha O.,vitinha
+Genoa,piazzati,3,Messias,messias
+Inter,rigori,1,Calhanoglu,calhanoglu
+Inter,rigori,2,Zielinski,zielinski
+Inter,rigori,3,Martinez L.,martinez
+Inter,piazzati,1,Calhanoglu,calhanoglu
+Inter,piazzati,2,Dimarco,dimarco
+Inter,piazzati,3,Zielinski,zielinski
+Juventus,rigori,1,Kolo Muani,kolomuani
+Juventus,rigori,2,Woltemade,woltemade
+Juventus,rigori,3,Gonzalez N.,gonzalez
+Juventus,piazzati,1,Yildiz,yildiz
+Juventus,piazzati,2,Locatelli,locatelli
+Juventus,piazzati,3,Douglas Luiz,douglasluiz
+Lazio,rigori,1,Zaccagni,zaccagni
+Lazio,rigori,2,Pinamonti,pinamonti
+Lazio,rigori,3,Gudmundsson A.,gudmundsson
+Lazio,piazzati,1,Rovella,rovella
+Lazio,piazzati,2,Zaccagni,zaccagni
+Lazio,piazzati,3,Gudmundsson A.,gudmundsson
+Lecce,rigori,1,Geubbels,geubbels
+Lecce,rigori,2,Stulic,stulic
+Lecce,rigori,3,Berisha M.,berisha
+Lecce,piazzati,1,Pierotti,pierotti
+Lecce,piazzati,2,Berisha M.,berisha
+Lecce,piazzati,3,Gandelman,gandelman
+Milan,rigori,1,Ramos G.,ramos
+Milan,rigori,2,Pulisic,pulisic
+Milan,rigori,3,Modric,modric
+Milan,piazzati,1,Modric,modric
+Milan,piazzati,2,Pulisic,pulisic
+Milan,piazzati,3,Saelemaekers,saelemaekers
+Monza,rigori,1,Cutrone,cutrone
+Monza,rigori,2,Varela G.,varela
+Monza,rigori,3,Ngonge,ngonge
+Monza,piazzati,1,Ngonge,ngonge
+Monza,piazzati,2,Folorunsho,folorunsho
+Monza,piazzati,3,Pessina,pessina
+Napoli,rigori,1,De Bruyne,debruyne
+Napoli,rigori,2,Hojlund,hojlund
+Napoli,rigori,3,Politano,politano
+Napoli,piazzati,1,De Bruyne,debruyne
+Napoli,piazzati,2,Politano,politano
+Napoli,piazzati,3,Neres,neres
+Parma,rigori,1,Tourè E.,toure
+Parma,rigori,2,Valeri,valeri
+Parma,rigori,3,Bernabè,bernabe
+Parma,piazzati,1,Bernabè,bernabe
+Parma,piazzati,2,Nicolussi Caviglia,nicolussicaviglia
+Parma,piazzati,3,Valeri,valeri
+Roma,rigori,1,Malen,malen
+Roma,rigori,2,Dybala,dybala
+Roma,rigori,3,Castro S.,castro
+Roma,piazzati,1,Dybala,dybala
+Roma,piazzati,2,Malen,malen
+Roma,piazzati,3,Pellegrini Lo.,pellegrinilo
+Sassuolo,rigori,1,Berardi,berardi
+Sassuolo,rigori,2,Esposito Se.,espositose
+Sassuolo,rigori,3,Laurientè,lauriente
+Sassuolo,piazzati,1,Berardi,berardi
+Sassuolo,piazzati,2,Laurientè,lauriente
+Sassuolo,piazzati,3,Adzic,adzic
+Torino,rigori,1,Vlasic,vlasic
+Torino,rigori,2,Simeone,simeone
+Torino,rigori,3,Mandragora,mandragora
+Torino,piazzati,1,Vlasic,vlasic
+Torino,piazzati,2,Mandragora,mandragora
+Torino,piazzati,3,Gineitis,gineitis
+Udinese,rigori,1,Davis K.,davis
+Udinese,rigori,2,Solet,solet
+Udinese,rigori,3,Zaniolo,zaniolo
+Udinese,piazzati,1,Zaniolo,zaniolo
+Udinese,piazzati,2,Ekkelenkamp,ekkelenkamp
+Udinese,piazzati,3,Unai Gomez,unaigomez
+Venezia,rigori,1,Busio,busio
+Venezia,rigori,2,Adams A.,adams
+Venezia,rigori,3,Adorante,adorante
+Venezia,piazzati,1,Busio,busio
+Venezia,piazzati,2,Yeboah J.,yeboah
+Venezia,piazzati,3,Perez K.,perez

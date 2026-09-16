@@ -1,0 +1,102 @@
+lista,blocco,nome,ruolo,squadra,eta,titolare,presenze,gol,assist,presenze_prev,gol_prev,assist_prev,titolare_fonte,obiettivo,fascia,prezzo_indicativo,punteggio,fm,mv,rig_segnati,fm_prev,mv_prev,rig_segnati_prev,delta_fm,fm_ponderata,bonus,squadra_prev,cambiato_squadra,rigorista,piazzati,indisponibile,infortunio,rientro_data,giorni_stop,stop_lungo,rientro_nota,gs_partita_squadra,gs_partita_squadra_prev,rig_parati_prev,ammonizioni_prev,espulsioni_prev
+Portieri,principale,Butez,P,Como,31,1,3,0,0,38.0,0.0,1.0,stima da presenze,,Medio,4-11,6.57,5.33,6.33,0,6.24,6.45,0.0,-0.91,6.07,0.5,Como 1907,0,0,0,,,,,,,1.0,0.76,0.0,3.0,0.0
+Portieri,principale,Svilar,P,Roma,27,1,4,0,0,38.0,0.0,0.0,probabili formazioni,,Semi-top,12-24,7.06,7.12,6.62,0,6.12,6.46,0.0,1.0,6.36,0.7,Roma,0,0,0,,,,,,,0.25,0.82,0.0,0.0,0.0
+Portieri,principale,Maignan,P,Milan,31,1,4,0,0,37.0,0.0,0.0,probabili formazioni,,Medio,4-11,6.35,5.5,6.25,0,5.96,6.42,0.0,-0.46,5.85,0.5,Milan,0,0,0,,,,,,,1.0,0.92,0.0,4.0,0.0
+Portieri,principale,Milinkovic-Savic,P,Napoli,29,1,1,0,0,27.0,0.0,1.0,probabili formazioni,,Semi-top,12-24,7.1,7.5,6.5,0,6.28,6.41,0.0,1.22,6.4,0.7,Napoli,0,0,0,,,,,,,1.25,0.95,0.0,0.0,0.0
+Portieri,principale,Carnesecchi,P,Atalanta,26,1,4,0,0,37.0,0.0,0.0,probabili formazioni,,Medio,4-11,6.59,5.75,6.75,0,5.93,6.36,0.0,-0.18,5.89,0.7,Atalanta,0,0,0,,,,,,,1.25,0.95,0.0,0.0,0.0
+Difensori,principale,Yan Couto,D,Como,24,1,4,0,1,,,,stima da presenze,obiettivo mercato,Semi-top,15-29,7.2,6.5,6.38,0,,,,,6.5,0.7,,0,0,0,,,,,,,1.0,0.76,,,
+Difensori,principale,Alex Valle,D,Como,22,1,3,0,1,28.0,1.0,4.0,stima da presenze,obiettivo mercato,Semi-top,15-29,7.14,6.83,6.67,0,6.31,6.19,0.0,0.52,6.44,0.7,Como 1907,0,0,0,,,,,,,1.0,0.76,0.0,3.0,0.0
+Difensori,principale,Jacobo Ramon,D,Como,21,1,4,1,0,32.0,2.0,0.0,stima da presenze,obiettivo mercato,Semi-top,15-29,7.14,7.25,6.5,0,6.14,6.16,0.0,1.11,6.44,0.7,Como 1907,0,0,0,,,,,,,1.0,0.76,0.0,11.0,1.0
+Difensori,principale,Chalobah,D,Como,27,1,3,0,0,,,,stima da presenze,obiettivo mercato,Medio,5-14,7.03,6.33,6.33,0,,,,,6.33,0.7,,0,0,0,,,,,,,1.0,0.76,,,
+Difensori,principale,Valeri,D,Parma,28,1,4,0,0,34.0,0.0,2.0,probabili formazioni,,Medio,5-14,7.03,6.0,6.0,0,6.18,6.18,0.0,-0.18,6.13,0.9,Parma,0,2,3,,,,,,,1.5,1.21,0.0,2.0,0.0
+Difensori,principale,Dimarco,D,Inter,29,1,4,0,1,35.0,7.0,16.0,probabili formazioni,,Top,30-50,8.17,6.75,6.62,0,7.72,6.9,0.0,-0.97,7.47,0.7,Inter,0,0,2,,,,,,,1.5,0.92,0.0,3.0,0.0
+Difensori,principale,Bisseck,D,Inter,26,1,3,1,0,23.0,3.0,1.0,probabili formazioni,,Top,30-50,7.93,8.25,6.75,0,6.83,6.44,0.0,1.42,7.23,0.7,Inter,0,0,0,,,,,,,1.5,0.92,0.0,2.0,0.0
+Difensori,principale,Bracaglia,D,Frosinone,23,1,4,1,1,,,,probabili formazioni,,Top,30-50,7.82,7.12,6.5,0,,,,,7.12,0.7,,0,0,0,,,,,,,1.0,,,,
+Difensori,principale,Bremer,D,Juventus,29,1,4,1,0,26.0,4.0,3.0,probabili formazioni,,Top,30-50,7.69,7.38,6.38,0,6.81,6.31,0.0,0.57,6.99,0.7,Juventus,0,0,0,,,,,,,1.0,0.89,0.0,5.0,0.0
+Difensori,principale,Abankwah,D,Udinese,22,1,4,1,0,,,,probabili formazioni,,Semi-top,15-29,7.58,6.88,6.25,0,,,,,6.88,0.7,,0,0,0,,,,,,,2.5,1.26,,,
+Difensori,principale,Wesley,D,Roma,23,1,3,0,1,30.0,5.0,0.0,probabili formazioni,,Semi-top,15-29,7.52,6.83,6.67,0,6.82,6.4,0.0,0.01,6.82,0.7,Roma,0,0,0,,,,,,,0.25,0.82,0.0,6.0,1.0
+Difensori,principale,Oyono,D,Frosinone,25,1,4,0,1,,,,probabili formazioni,,Semi-top,15-29,7.32,6.62,6.62,0,,,,,6.62,0.7,,0,0,0,,,,,,,1.0,,,,
+Difensori,principale,Scalvini,D,Atalanta,23,1,4,0,0,24.0,3.0,1.0,probabili formazioni,,Semi-top,15-29,7.28,6.12,6.12,0,6.81,6.38,0.0,-0.69,6.58,0.7,Atalanta,0,0,0,,,,,,,1.25,0.95,0.0,2.0,0.0
+Difensori,principale,Tiago Gabriel,D,Lecce,22,1,4,2,0,37.0,2.0,0.0,probabili formazioni,,Semi-top,15-29,7.24,8.12,6.62,0,6.03,6.0,0.0,2.09,6.54,0.7,Lecce,0,0,0,,,,,,,1.75,1.32,0.0,7.0,0.0
+Difensori,principale,Bastoni,D,Inter,27,1,4,0,0,28.0,1.0,4.0,probabili formazioni,,Semi-top,15-29,7.18,6.38,6.38,0,6.52,6.41,0.0,-0.14,6.48,0.7,Inter,0,0,0,,,,,,,1.5,0.92,0.0,6.0,0.0
+Difensori,principale,Mario Hermoso,D,Roma,31,1,4,1,0,27.0,3.0,2.0,probabili formazioni,,Semi-top,15-29,7.15,7.38,6.88,0,6.33,6.11,0.0,1.05,6.65,0.5,Roma,0,0,0,,,,,,,0.25,0.82,0.0,9.0,0.0
+Difensori,principale,Mancini,D,Roma,30,1,4,0,1,36.0,4.0,2.0,probabili formazioni,,Semi-top,15-29,7.13,7.0,6.88,0,6.51,6.22,0.0,0.49,6.63,0.5,Roma,0,0,0,,,,,,,0.25,0.82,0.0,9.0,0.0
+Difensori,principale,Pavlovic,D,Milan,25,1,4,0,0,34.0,5.0,1.0,probabili formazioni,,Semi-top,15-29,7.12,5.88,6.12,0,6.61,6.17,0.0,-0.73,6.42,0.7,Milan,0,0,0,,,,,,,1.0,0.92,0.0,4.0,0.0
+Difensori,principale,Kalulu,D,Juventus,26,1,4,0,0,37.0,2.0,4.0,probabili formazioni,,Semi-top,15-29,7.11,6.38,6.38,0,6.42,6.22,0.0,-0.04,6.41,0.7,Juventus,0,0,0,,,,,,,1.0,0.89,0.0,3.0,0.0
+Difensori,principale,Lulli,D,Roma,19,1,4,0,0,,,,probabili formazioni,,Semi-top,15-29,7.08,6.38,6.38,0,,,,,6.38,0.7,,0,0,0,,,,,,,0.25,0.82,,,
+Difensori,principale,Comert,D,Torino,28,1,3,0,1,,,,probabili formazioni,,Medio,5-14,7.03,6.33,6.17,0,,,,,6.33,0.7,,0,0,0,,,,,,,1.75,1.66,,,
+Difensori,principale,Celik,D,Juventus,29,1,4,0,0,34.0,1.0,2.0,probabili formazioni,,Medio,5-14,7.0,6.25,6.38,0,6.32,6.26,0.0,-0.07,6.3,0.7,Roma,1,0,0,,,,,,,1.0,0.82,0.0,2.0,1.0
+Difensori,principale,Doig,D,Sassuolo,24,1,4,1,0,30.0,0.0,0.0,probabili formazioni,,Medio,5-14,6.99,7.5,6.75,0,5.8,5.89,0.0,1.7,6.29,0.7,Sassuolo,0,0,0,,,,,,,1.75,1.32,0.0,5.0,0.0
+Difensori,principale,Juan Miranda,D,Bologna,26,1,3,0,1,32.0,1.0,3.0,probabili formazioni,,Medio,5-14,6.98,6.33,6.17,0,6.27,6.23,0.0,0.06,6.28,0.7,Bologna,0,0,0,,,,,,,1.25,1.21,0.0,6.0,0.0
+Difensori,squadre minori,Comuzzo,D,Torino,21,1,4,1,0,27.0,1.0,0.0,probabili formazioni,,Medio,5-14,6.97,7.0,6.25,0,5.94,5.94,0.0,1.06,6.27,0.7,Fiorentina,1,0,0,,,,,,,1.75,1.32,0.0,2.0,0.0
+Difensori,squadre minori,Birindelli,D,Monza,27,1,4,0,1,,,,probabili formazioni,,Medio,5-14,6.95,6.25,6.12,0,,,,,6.25,0.7,,0,0,0,,,,,,,2.75,,,,
+Difensori,squadre minori,Rodriguez,D,Cagliari,21,1,4,0,0,17.0,1.0,0.0,probabili formazioni,,Medio,5-14,6.91,6.25,6.25,0,6.19,6.03,0.0,0.06,6.21,0.7,Cagliari,0,0,0,,,,,,,0.5,1.39,0.0,3.0,0.0
+Difensori,squadre minori,Kamara,D,Udinese,32,1,4,2,1,26.0,0.0,2.0,probabili formazioni,,Medio,5-14,6.91,8.38,6.75,0,5.94,6.0,0.0,2.44,6.71,0.2,Udinese,0,0,0,,,,,,,2.5,1.26,0.0,5.0,0.0
+Difensori,squadre minori,Østigård,D,Genoa,27,1,4,0,0,30.0,5.0,1.0,probabili formazioni,,Medio,5-14,6.86,5.25,5.62,0,6.53,6.1,0.0,-1.28,6.16,0.7,Genoa,0,0,0,,,,,,,2.0,1.34,0.0,7.0,0.0
+Difensori,squadre minori,Obert,D,Cagliari,24,1,4,0,0,35.0,0.0,3.0,probabili formazioni,,Medio,5-14,6.83,6.62,6.62,0,5.96,6.06,0.0,0.66,6.13,0.7,Cagliari,0,0,0,,,,,,,0.5,1.39,0.0,9.0,0.0
+Difensori,squadre minori,Cittadini,D,Frosinone,24,1,4,0,0,,,,probabili formazioni,,Medio,5-14,6.82,6.12,6.25,0,,,,,6.12,0.7,,0,0,0,,,,,,,1.0,,,,
+Difensori,squadre minori,Leysen,D,Sassuolo,23,1,4,0,1,,,,probabili formazioni,,Medio,5-14,6.82,6.12,6.12,0,,,,,6.12,0.7,,0,0,0,,,,,,,1.75,1.32,,,
+Difensori,squadre minori,Vojvoda,D,Udinese,31,1,4,0,0,30.0,2.0,2.0,probabili formazioni,,Medio,5-14,6.81,6.12,6.12,0,6.39,6.11,0.0,-0.27,6.31,0.5,Como 1907,1,0,0,,,,,,,2.5,0.76,0.0,1.0,0.0
+Difensori,squadre minori,Saul Coco,D,Torino,27,1,4,0,0,35.0,1.0,1.0,probabili formazioni,,Medio,5-14,6.77,5.88,5.88,0,6.13,6.07,0.0,-0.25,6.07,0.7,Torino,0,0,0,,,,,,,1.75,1.66,0.0,3.0,0.0
+Centrocampisti,principale,Ilic,C,Lecce,25,0,3,0,2,8.0,0.0,0.0,,sesto centrocampista,Scommessa,1-9,6.38,6.67,6.5,0,5.62,5.75,0.0,1.05,6.18,0.2,Torino,1,0,0,,,,,,,1.75,1.66,0.0,2.0,0.0
+Centrocampisti,principale,Matic,C,Sassuolo,38,1,4,0,1,34.0,1.0,1.0,probabili formazioni,obiettivo mercato,Scommessa,1-9,6.31,6.25,6.25,0,6.06,6.07,0.0,0.19,6.11,0.2,Sassuolo,0,0,0,,,,,,,1.75,1.32,0.0,7.0,1.0
+Centrocampisti,principale,Rabiot,C,Milan,31,1,4,1,2,29.0,6.0,4.0,probabili formazioni,obiettivo,Medio,10-29,7.72,7.75,6.5,0,7.0,6.37,0.0,0.75,7.22,0.5,Milan,0,0,0,,,,,,,1.0,0.92,0.0,5.0,0.0
+Centrocampisti,principale,Pisilli,C,Roma,22,0,3,2,0,25.0,2.0,4.0,,obiettivo,Semi-top,30-59,7.93,8.67,6.83,0,6.57,6.28,0.0,2.1,7.13,0.8,Roma,0,0,0,,,,,,,0.25,0.82,0.0,3.0,0.0
+Centrocampisti,principale,Fagioli,C,Fiorentina,25,1,4,0,1,33.0,2.0,3.0,probabili formazioni,obiettivo,Medio,10-29,7.07,6.25,6.25,0,6.41,6.23,0.0,-0.16,6.37,0.7,Fiorentina,0,0,0,,,,,,,2.75,1.32,0.0,5.0,0.0
+Centrocampisti,principale,Diouf,C,Inter,23,1,3,0,3,19.0,1.0,0.0,probabili formazioni,obiettivo,Semi-top,30-59,7.75,7.67,7.17,0,6.31,6.08,0.0,1.36,6.75,1.0,Inter,0,0,0,,,,,,,1.5,0.92,0.0,1.0,0.0
+Centrocampisti,principale,Moreira,C,Milan,22,0,2,2,0,,,,,obiettivo,Top,60-100,10.2,10.0,6.75,0,,,,,10.0,0.2,,0,0,0,,,,,,,1.0,0.92,,,
+Centrocampisti,principale,Mastantuono,C,Fiorentina,19,1,4,3,0,,,,probabili formazioni,obiettivo,Top,60-100,9.8,9.0,6.75,0,,,,,9.0,0.8,,0,0,1,,,,,,,2.75,1.32,,,
+Centrocampisti,principale,Barella,C,Inter,29,1,4,1,1,34.0,3.0,8.0,probabili formazioni,,Semi-top,30-59,8.02,8.0,7.12,0,6.68,6.4,0.0,1.32,7.02,1.0,Inter,0,0,0,,,,,,,1.5,0.92,0.0,7.0,0.0
+Centrocampisti,principale,Paz,C,Como,22,1,4,1,1,35.0,12.0,6.0,stima da presenze,,Top,60-100,8.8,7.5,6.62,0,7.36,6.46,0.0,0.14,7.4,1.4,Como 1907,0,0,1,,,,,,,1.0,0.76,0.0,5.0,0.0
+Centrocampisti,principale,Caqueret,C,Como,26,1,4,0,0,30.0,2.0,6.0,stima da presenze,,Medio,10-29,7.61,5.83,6.0,0,6.5,6.24,0.0,-0.67,6.31,1.3,Como 1907,0,0,0,,,,,,,1.0,0.76,0.0,3.0,0.0
+Centrocampisti,principale,Francisco Conceicao,C,Juventus,24,1,4,0,1,31.0,3.0,5.0,probabili formazioni,,Medio,10-29,7.31,6.75,6.62,0,6.55,6.23,0.0,0.2,6.61,0.7,Juventus,0,0,0,,,,,,,1.0,0.89,0.0,3.0,0.0
+Centrocampisti,principale,Pulisic,C,Milan,28,1,1,0,1,30.0,8.0,4.0,probabili formazioni,,Semi-top,30-59,8.09,7.0,7.0,0,7.21,6.31,0.0,-0.21,7.19,0.9,Milan,0,2,2,,,,,,,1.0,0.92,0.0,0.0,0.0
+Centrocampisti,principale,Perrone,C,Como,23,1,4,0,1,36.0,3.0,4.0,stima da presenze,,Semi-top,30-59,7.8,6.5,6.38,0,6.5,6.26,0.0,0.0,6.5,1.3,Como 1907,0,0,0,,,,,,,1.0,0.76,0.0,8.0,0.0
+Centrocampisti,principale,Gaetano,C,Atalanta,26,1,3,0,1,33.0,2.0,4.0,probabili formazioni,,Medio,10-29,7.08,6.33,6.5,0,6.39,6.17,0.0,-0.06,6.38,0.7,Cagliari,1,0,3,,,,,,,1.25,1.39,0.0,4.0,0.0
+Centrocampisti,principale,Politano,C,Napoli,33,1,4,1,0,34.0,2.0,5.0,probabili formazioni,,Scommessa,1-9,6.75,6.88,6.25,0,6.44,6.19,0.0,0.44,6.55,0.2,Napoli,0,3,2,,,,,,,1.25,0.95,0.0,4.0,0.0
+Centrocampisti,principale,Baturina,C,Como,23,1,4,2,1,29.0,6.0,3.0,stima da presenze,,Top,60-100,8.86,8.38,6.88,0,7.22,6.44,0.0,1.16,7.56,1.3,Como 1907,0,0,2,,,,,,,1.0,0.76,0.0,0.0,0.0
+Centrocampisti,principale,da Cunha,C,Como,25,1,4,0,0,36.0,6.0,4.0,stima da presenze,,Top,60-100,8.65,6.38,6.38,0,7.01,6.46,4.0,-0.63,6.85,1.8,Como 1907,0,1,0,,,,,,,1.0,0.76,0.0,4.0,0.0
+Centrocampisti,principale,Ekkelenkamp,C,Udinese,26,1,4,2,1,31.0,5.0,3.0,probabili formazioni,,Semi-top,30-59,8.01,8.38,6.5,0,6.9,6.26,0.0,1.48,7.31,0.7,Udinese,0,0,2,,,,,,,2.5,1.26,0.0,1.0,0.0
+Centrocampisti,principale,Zielinski,C,Inter,32,1,4,1,1,34.0,6.0,3.0,probabili formazioni,,Semi-top,30-59,7.91,7.88,6.75,0,6.97,6.4,1.0,0.91,7.21,0.7,Inter,0,2,3,,,,,,,1.5,0.92,0.0,3.0,0.0
+Centrocampisti,principale,Adopo,C,Cagliari,26,1,4,0,2,38.0,1.0,2.0,probabili formazioni,,Medio,10-29,7.07,6.88,6.62,0,6.21,6.16,0.0,0.67,6.37,0.7,Cagliari,0,0,0,,,,,,,0.5,1.39,0.0,4.0,0.0
+Centrocampisti,principale,De Bruyne,C,Napoli,35,1,4,1,1,18.0,5.0,2.0,probabili formazioni,,Semi-top,30-59,8.34,7.88,6.75,0,7.32,6.5,3.0,0.56,7.54,0.8,Napoli,0,1,1,,,,,,,1.25,0.95,0.0,1.0,0.0
+Centrocampisti,principale,Vlasic,C,Torino,29,1,4,0,0,37.0,8.0,3.0,probabili formazioni,,Semi-top,30-59,8.03,6.12,6.12,0,6.93,6.27,5.0,-0.81,6.73,1.3,Torino,0,1,1,,,,,,,1.75,1.66,0.0,7.0,0.0
+Centrocampisti,principale,Kone,C,Roma,25,1,4,0,0,29.0,2.0,3.0,probabili formazioni,,Semi-top,30-59,7.74,6.12,6.25,0,6.57,6.28,0.0,-0.45,6.44,1.3,Roma,0,0,0,,,,,,,0.25,0.82,0.0,2.0,0.0
+Centrocampisti,squadre minori,Adzic,C,Sassuolo,20,1,4,2,1,10.0,1.0,0.0,probabili formazioni,,Top,60-100,8.63,8.62,6.75,0,7.1,6.3,0.0,1.52,7.93,0.7,Juventus,1,0,3,,,,,,,1.75,0.89,0.0,0.0,0.0
+Centrocampisti,squadre minori,Romano,C,Cagliari,20,1,4,1,0,,,,probabili formazioni,,Top,60-100,8.45,7.75,6.75,0,,,,,7.75,0.7,,0,0,3,,,,,,,0.5,1.39,,,
+Centrocampisti,squadre minori,Maldini,C,Cagliari,25,1,4,2,0,13.0,2.0,1.0,probabili formazioni,,Semi-top,30-59,8.2,8.5,6.5,1,6.58,6.19,0.0,1.92,7.5,0.7,Lazio,1,0,2,,,,,,,0.5,1.05,0.0,0.0,0.0
+Centrocampisti,squadre minori,Calo,C,Frosinone,29,1,4,0,1,,,,probabili formazioni,,Semi-top,30-59,8.05,6.75,6.62,0,,,,,6.75,1.3,,0,1,1,,,,,,,1.0,,,,
+Centrocampisti,squadre minori,Hainaut,C,Venezia,24,1,4,1,1,,,,probabili formazioni,,Semi-top,30-59,7.95,7.25,6.38,0,,,,,7.25,0.7,,0,0,0,,,,,,,2.75,,,,
+Centrocampisti,squadre minori,Colpani,C,Monza,27,1,4,1,0,,,,probabili formazioni,,Medio,10-29,7.7,7.0,6.25,0,,,,,7.0,0.7,,0,0,0,,,,,,,2.75,,,,
+Centrocampisti,squadre minori,Coulibaly,C,Lecce,30,1,4,2,1,33.0,3.0,1.0,probabili formazioni,,Medio,10-29,7.4,8.5,6.62,0,6.32,6.09,0.0,2.18,6.9,0.5,Lecce,0,0,0,,,,,,,1.75,1.32,0.0,4.0,0.0
+Centrocampisti,squadre minori,Unai Gomez,C,Udinese,23,1,4,0,1,,,,probabili formazioni,,Medio,10-29,7.2,6.5,6.33,0,,,,,6.5,0.7,,0,0,3,,,,,,,2.5,1.26,,,
+Centrocampisti,squadre minori,Adrian Bernabe,C,Parma,25,1,3,0,0,32.0,3.0,1.0,probabili formazioni,,Medio,10-29,7.14,6.0,6.0,0,6.56,6.27,0.0,-0.56,6.44,0.7,Parma,0,0,0,,,,,,,1.5,1.21,0.0,0.0,0.0
+Centrocampisti,squadre minori,Cacciamani,C,Torino,19,1,4,0,1,,,,probabili formazioni,,Medio,10-29,7.08,6.38,6.25,0,,,,,6.38,0.7,,0,0,0,,,,,,,1.75,1.66,,,
+Attaccanti,principale,Lauriente,A,Sassuolo,28,1,4,0,1,38.0,7.0,9.0,probabili formazioni,quinta punta,Medio,15-49,7.43,6.25,6.25,0,6.88,6.25,0.0,-0.63,6.73,0.7,Sassuolo,0,3,2,,,,,,,1.75,1.32,0.0,4.0,0.0
+Attaccanti,principale,Malen,A,Roma,27,1,4,6,0,18.0,14.0,2.0,probabili formazioni,obiettivo,Top,110-180,12.07,12.5,7.38,0,9.28,6.75,3.0,3.22,10.57,1.5,Roma,0,1,2,,,,,,,0.25,0.82,0.0,1.0,0.0
+Attaccanti,principale,Lautaro Martinez,A,Inter,29,1,3,2,0,30.0,17.0,6.0,probabili formazioni,,Top,110-180,9.65,8.5,6.5,0,8.7,6.6,0.0,-0.2,8.65,1.0,Inter,0,0,0,,,,,,,1.5,0.92,0.0,4.0,0.0
+Attaccanti,principale,Douvikas,A,Como,27,1,4,2,0,38.0,14.0,1.0,stima da presenze,,Semi-top,50-109,8.87,8.5,6.62,0,7.67,6.32,1.0,0.83,7.87,1.0,Como 1907,0,3,0,,,,,,,1.0,0.76,0.0,0.0,0.0
+Attaccanti,principale,Thuram,A,Inter,29,1,3,2,1,29.0,13.0,6.0,probabili formazioni,,Semi-top,50-109,9.24,9.0,6.83,0,8.0,6.52,0.0,1.0,8.24,1.0,Inter,0,0,0,,,,,,,1.5,0.92,0.0,2.0,0.0
+Attaccanti,principale,Hojlund,A,Napoli,23,1,4,2,0,33.0,12.0,5.0,probabili formazioni,,Semi-top,50-109,8.63,7.88,6.38,0,7.68,6.35,1.0,0.2,7.73,0.9,Napoli,0,2,0,,,,,,,1.25,0.95,0.0,1.0,0.0
+Attaccanti,principale,Simeone,A,Torino,31,1,4,0,0,32.0,11.0,0.0,probabili formazioni,,Medio,15-49,7.54,5.62,5.62,0,7.3,6.16,0.0,-1.68,6.84,0.7,Torino,0,2,0,,,,,,,1.75,1.66,0.0,1.0,0.0
+Attaccanti,principale,Scamacca,A,Atalanta,27,1,4,1,0,24.0,10.0,1.0,probabili formazioni,,Semi-top,50-109,8.65,7.12,6.38,0,7.61,6.2,2.0,-0.49,7.45,1.2,Atalanta,0,1,0,,,,,,,1.25,0.95,0.0,2.0,0.0
+Attaccanti,principale,Davis,A,Udinese,28,1,3,0,2,30.0,10.0,4.0,probabili formazioni,,Medio,15-49,8.18,6.17,6.0,0,7.22,6.22,4.0,-1.05,6.98,1.2,Udinese,0,1,0,,,,,,,2.5,1.26,0.0,5.0,0.0
+Attaccanti,principale,Krstovic,A,Atalanta,26,0,4,1,0,33.0,10.0,5.0,,,Medio,15-49,7.6,6.88,6.0,0,7.31,6.28,0.0,-0.43,7.2,0.4,Atalanta,0,2,0,,,,,,,1.25,0.95,0.0,4.0,0.0
+Attaccanti,principale,Yildiz,A,Juventus,21,0,1,0,0,36.0,10.0,6.0,,,Scommessa,1-14,6.79,6.5,6.5,0,7.25,6.42,1.0,-0.75,7.19,-0.4,Juventus,0,0,1,infortunato,,,,sì,"l'attaccante turco, dopo la gara di Frosinone (23 agosto), ha lamentato un problema al piede. Operato il 31 agosto di osteosintesi della frattura della base del V metatarso del piede sinistro, stop di circa tre mesi. Ipotesi di rientro in campo da fine novembre.",1.0,0.89,0.0,2.0,0.0
+Attaccanti,principale,Pellegrino,A,Fiorentina,25,0,4,2,0,37.0,9.0,1.0,,,Scommessa,1-14,7.35,7.62,6.0,0,6.73,5.91,1.0,0.89,6.95,0.4,Parma,1,2,0,,,,,,,2.75,1.21,0.0,5.0,0.0
+Attaccanti,principale,Berardi,A,Sassuolo,32,1,3,1,0,26.0,8.0,4.0,probabili formazioni,,Medio,15-49,8.18,8.17,6.83,0,7.1,6.21,2.0,1.07,7.38,0.8,Sassuolo,0,1,1,,,,,,,1.75,1.32,0.0,2.0,1.0
+Attaccanti,principale,Esposito,A,Inter,21,0,4,2,1,35.0,7.0,3.0,,,Medio,15-49,7.84,8.75,6.88,0,6.86,6.14,0.0,1.89,7.34,0.5,Inter,0,0,0,,,,,,,1.5,0.92,0.0,1.0,0.0
+Attaccanti,principale,Soule,A,Roma,23,1,4,2,1,33.0,6.0,5.0,probabili formazioni,,Semi-top,50-109,8.43,8.62,6.75,0,7.0,6.34,0.0,1.62,7.43,1.0,Roma,0,0,0,,,,,,,0.25,0.82,0.0,1.0,0.0
+Attaccanti,principale,Adams,A,Torino,30,0,3,2,0,33.0,6.0,2.0,,,Scommessa,1-14,7.02,9.0,6.67,0,6.73,6.06,0.0,2.27,7.22,-0.2,Torino,0,0,0,infortunato,Infortunio agli adduttori,11/10/2026,25.0,,"L'attaccante frenato a metà settembre da una lesione distrattiva di basso grado all'adduttore, forfait contro Roma e Bologna. Punta a recuperare nella sosta per essere poi arruolabile dalla prima metà di ottobre.",1.75,1.66,0.0,0.0,0.0
+Attaccanti,principale,Bonny,A,Inter,23,0,3,1,0,33.0,5.0,4.0,,,Medio,15-49,7.39,7.33,6.33,0,6.77,6.11,0.0,0.56,6.89,0.5,Inter,0,0,0,,,,,,,1.5,0.92,0.0,1.0,0.0
+Attaccanti,principale,Noslin,A,Lazio,27,0,3,1,0,29.0,4.0,2.0,,,Scommessa,1-14,6.82,7.0,6.0,0,6.5,6.0,0.0,0.5,6.62,0.2,Lazio,0,0,0,,,,,,,0.75,1.05,0.0,5.0,0.0
+Attaccanti,squadre minori,Raimondo,A,Frosinone,22,1,4,4,0,,,,probabili formazioni,,Top,110-180,10.58,9.88,6.75,0,,,,,9.88,0.7,,0,0,0,,,,,,,1.0,,,,
+Attaccanti,squadre minori,Kvernadze,A,Frosinone,23,1,4,2,1,,,,probabili formazioni,,Top,110-180,9.45,8.75,6.88,0,,,,,8.75,0.7,,0,0,0,,,,,,,1.0,,,,
+Attaccanti,squadre minori,Gustavo Varela,A,Monza,21,1,3,2,0,,,,probabili formazioni,,Semi-top,50-109,9.03,8.33,6.33,0,,,,,8.33,0.7,,0,0,0,,,,,,,2.75,,,,
+Attaccanti,squadre minori,Romero,A,Parma,23,1,3,1,0,,,,probabili formazioni,,Medio,15-49,7.87,7.17,6.17,0,,,,,7.17,0.7,,0,0,0,,,,,,,1.5,1.21,,,
+Attaccanti,squadre minori,Mendy,A,Cagliari,19,1,4,1,0,9.0,2.0,0.0,probabili formazioni,,Medio,15-49,7.61,7.12,6.38,0,6.62,5.94,0.0,0.5,6.91,0.7,Cagliari,0,0,0,,,,,,,0.5,1.39,0.0,1.0,0.0
+Attaccanti,squadre minori,Bowie,A,Sassuolo,24,1,4,1,0,14.0,4.0,0.0,probabili formazioni,,Medio,15-49,7.58,7.0,6.25,0,6.77,5.9,0.0,0.23,6.88,0.7,Verona,1,0,0,,,,,,,1.75,1.61,0.0,1.0,0.0
+Attaccanti,squadre minori,Yeboah,A,Venezia,26,1,4,1,0,,,,probabili formazioni,,Medio,15-49,7.58,6.88,6.12,0,,,,,6.88,0.7,,0,0,2,,,,,,,2.75,,,,
+Attaccanti,squadre minori,Lontani,A,Parma,18,1,4,1,0,,,,probabili formazioni,,Medio,15-49,7.45,6.75,5.88,0,,,,,6.75,0.7,,0,0,0,,,,,,,1.5,1.21,,,
+Attaccanti,squadre minori,Colombo,A,Genoa,24,1,4,0,1,38.0,7.0,1.0,probabili formazioni,,Scommessa,1-14,7.34,5.0,5.62,0,6.5,5.96,1.0,-1.5,6.14,1.2,Genoa,0,1,0,,,,,,,2.0,1.34,0.0,2.0,0.0
+Attaccanti,squadre minori,Stulic,A,Lecce,25,1,4,0,0,34.0,4.0,0.0,probabili formazioni,,Scommessa,1-14,7.07,5.88,5.88,0,6.27,5.81,1.0,-0.39,6.17,0.9,Lecce,0,2,0,,,,,,,1.75,1.32,0.0,1.0,0.0

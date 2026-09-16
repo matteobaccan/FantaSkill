@@ -1,0 +1,196 @@
+{
+  "stagione_corrente": "2026-2027",
+  "stagione_precedente": "2025-2026",
+  "giornata_corrente": "auto",
+  "giornate_stagione": 38,
+  "budget": 500,
+  "rosa": {
+    "P": 3,
+    "D": 8,
+    "C": 8,
+    "A": 6
+  },
+  "shortlist": {
+    "P": 5,
+    "D": 24,
+    "C": 24,
+    "A": 18
+  },
+  "squadre_evidenziate": [
+    "Inter",
+    "Como",
+    "Milan",
+    "Juventus",
+    "Roma",
+    "Napoli"
+  ],
+  "squadre_offensive": [
+    "Roma",
+    "Inter",
+    "Como"
+  ],
+  "boost_centrocampo": [
+    "Roma",
+    "Como"
+  ],
+  "obiettivi": [
+    {
+      "nome": "Rabiot",
+      "ruolo": "C"
+    },
+    {
+      "nome": "Diouf",
+      "ruolo": "C"
+    },
+    {
+      "nome": "Malen",
+      "ruolo": "A"
+    },
+    {
+      "nome": "Mastantuono",
+      "ruolo": "C"
+    },
+    {
+      "nome": "Moreira",
+      "ruolo": "C",
+      "alias": "Diego Moreira"
+    },
+    {
+      "nome": "Pisilli",
+      "ruolo": "C"
+    },
+    {
+      "nome": "Matic",
+      "ruolo": "C",
+      "nota": "obiettivo mercato"
+    },
+    {
+      "nome": "Lauriente",
+      "ruolo": "A",
+      "nota": "quinta punta"
+    },
+    {
+      "nome": "Fagioli",
+      "ruolo": "C"
+    },
+    {
+      "nome": "Ilic",
+      "ruolo": "C",
+      "squadra": "Lecce",
+      "nota": "sesto centrocampista"
+    }
+  ],
+  "soglie": {
+    "mv_min_difensori": 6.0,
+    "gol_min_attaccanti": 10,
+    "gol_min_centrocampista_bomber": 5,
+    "eta_max_preferita": 29,
+    "presenze_min_portiere": 15
+  },
+  "obiettivi_squadra": [
+    {
+      "squadra": "Como",
+      "ruolo": "D",
+      "solo_titolari": true,
+      "nota": "obiettivo mercato"
+    }
+  ],
+  "prezzi": {
+    "P": {
+      "Top": [
+        25,
+        45
+      ],
+      "Semi-top": [
+        12,
+        24
+      ],
+      "Medio": [
+        4,
+        11
+      ],
+      "Scommessa": [
+        1,
+        3
+      ]
+    },
+    "D": {
+      "Top": [
+        30,
+        50
+      ],
+      "Semi-top": [
+        15,
+        29
+      ],
+      "Medio": [
+        5,
+        14
+      ],
+      "Scommessa": [
+        1,
+        4
+      ]
+    },
+    "C": {
+      "Top": [
+        60,
+        100
+      ],
+      "Semi-top": [
+        30,
+        59
+      ],
+      "Medio": [
+        10,
+        29
+      ],
+      "Scommessa": [
+        1,
+        9
+      ]
+    },
+    "A": {
+      "Top": [
+        110,
+        180
+      ],
+      "Semi-top": [
+        50,
+        109
+      ],
+      "Medio": [
+        15,
+        49
+      ],
+      "Scommessa": [
+        1,
+        14
+      ]
+    }
+  },
+  "ripartizione_budget": {
+    "P": 0.07,
+    "D": 0.02,
+    "C": 0.08,
+    "A": 0.83
+  },
+  "squadre_grandi": [
+    "Inter",
+    "Como",
+    "Milan",
+    "Juventus",
+    "Roma",
+    "Napoli",
+    "Atalanta",
+    "Lazio",
+    "Fiorentina",
+    "Bologna"
+  ],
+  "extra_squadre_minori": {
+    "D": 10,
+    "C": 10,
+    "A": 10
+  },
+  "strategia": "portiere buono; 8 difensori a 1 credito (titolari poco famosi); centrocampisti poco famosi; tutto il resto sull'attacco"
+}
